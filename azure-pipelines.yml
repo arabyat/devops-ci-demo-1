@@ -16,7 +16,6 @@ steps:
 # Start the build process
 - script: bash build.sh
   displayName: 'Run build script'
-
 - task: CopyFilesOverSSH@0
   inputs:
     sshEndpoint: 'auser-40.87.69.74'
