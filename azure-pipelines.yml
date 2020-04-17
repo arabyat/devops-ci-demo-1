@@ -16,13 +16,3 @@ steps:
 # Start the build process
 - script: bash build.sh
   displayName: 'Run build script'
-- task: CopyFilesOverSSH@0
-  inputs:
-    sshEndpoint: 'auser-40.87.69.74'
-    sourceFolder: 'web/'
-    contents: '**'
-    targetFolder: '/var/www/html'
-    cleanTargetFolder: true
-    readyTimeout: '20000'
-    overwrite: false
-    failOnEmptySource: true
